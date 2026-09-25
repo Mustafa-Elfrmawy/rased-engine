@@ -6,7 +6,7 @@ import (
 	"encoding/binary"
 	"testing"
 
-	"go-tracker-service/pkg/crc"
+	"github.com/Mustafa-Elfrmawy/rased-engine/pkg/crc"
 )
 
 // buildFrame constructs a valid non-extended GT06N frame with the given type,

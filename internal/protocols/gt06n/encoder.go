@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"go-tracker-service/pkg/crc"
+	"github.com/Mustafa-Elfrmawy/rased-engine/pkg/crc"
 )
 
 // buildACK constructs a Server ACK packet for the GT06N protocol.

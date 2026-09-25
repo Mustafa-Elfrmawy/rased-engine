@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"go-tracker-service/internal/models"
-	"go-tracker-service/internal/pipeline"
-	"go-tracker-service/internal/protocols/gt06n"
+	"github.com/Mustafa-Elfrmawy/rased-engine/internal/models"
+	"github.com/Mustafa-Elfrmawy/rased-engine/internal/pipeline"
+	"github.com/Mustafa-Elfrmawy/rased-engine/internal/protocols/gt06n"
 )
 
 // Handler implements the GT06N binary protocol over TCP.

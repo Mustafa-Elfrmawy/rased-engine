@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"go-tracker-service/internal/models"
+	"github.com/Mustafa-Elfrmawy/rased-engine/internal/models"
 )
 
 // GT06N message type constants — translated from Gt06ProtocolDecoder.java

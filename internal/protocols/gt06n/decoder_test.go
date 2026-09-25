@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"testing"
 
-	"go-tracker-service/pkg/crc"
+	"github.com/Mustafa-Elfrmawy/rased-engine/pkg/crc"
 )
 
 // buildLoginFrame constructs a syntactically valid GT06N login packet:

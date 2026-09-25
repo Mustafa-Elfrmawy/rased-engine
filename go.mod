@@ -1,4 +1,4 @@
-module go-tracker-service
+module github.com/Mustafa-Elfrmawy/rased-engine
 
 go 1.22
 

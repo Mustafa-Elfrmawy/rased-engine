@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"log"
 
-	"go-tracker-service/internal/models"
-	"go-tracker-service/internal/redis"
+	"github.com/Mustafa-Elfrmawy/rased-engine/internal/models"
+	"github.com/Mustafa-Elfrmawy/rased-engine/internal/redis"
 )
 
 // PublishHandler is the final stage of the pipeline.

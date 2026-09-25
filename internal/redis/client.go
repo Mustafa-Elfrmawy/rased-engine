@@ -5,10 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-
 	"github.com/redis/go-redis/v9"
-	"go-tracker-service/internal/config"
-	"go-tracker-service/internal/models"
+	"github.com/Mustafa-Elfrmawy/rased-engine/internal/config"
+	"github.com/Mustafa-Elfrmawy/rased-engine/internal/models"
 )
 
 type Client struct {
@@ -26,7 +25,7 @@ func NewClient(cfg config.Config) *Client {
 
 	_, err := rdb.Ping(ctx).Result()
 	if err != nil {
-		log.Printf("Warning: Failed to connect to Redis at %s:%s: %v", cfg.RedisHost, cfg.RedisPort, err)
+		log.Fatalf("Warning: Failed to connect to Redis at %s:%s: %v", cfg.RedisHost, cfg.RedisPort, err)
 	} else {
 		log.Printf("Redis connection established at %s:%s", cfg.RedisHost, cfg.RedisPort)
 	}

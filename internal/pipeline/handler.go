@@ -3,7 +3,7 @@ package pipeline
 import (
 	"log"
 
-	"go-tracker-service/internal/models"
+	"github.com/Mustafa-Elfrmawy/rased-engine/internal/models"
 )
 
 // PositionHandler defines a processing step in the pipeline.

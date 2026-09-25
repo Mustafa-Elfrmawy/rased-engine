@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"go-tracker-service/pkg/crc"
+	"github.com/Mustafa-Elfrmawy/rased-engine/pkg/crc"
 )
 
 // GT06N frame delimiters

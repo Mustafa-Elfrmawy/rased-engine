@@ -2,8 +2,7 @@ package pipeline
 
 import (
 	"testing"
-
-	"go-tracker-service/internal/models"
+	"github.com/Mustafa-Elfrmawy/rased-engine/internal/models"
 )
 
 // recordingHandler records invocation order for chain verification.

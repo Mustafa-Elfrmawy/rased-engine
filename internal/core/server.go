@@ -4,8 +4,8 @@ import (
 	"bufio"
 	"context"
 	"errors"
-	"go-tracker-service/internal/protocols/gt06n"
-	"go-tracker-service/internal/protocols/gt06n_tcp"
+	"github.com/Mustafa-Elfrmawy/rased-engine/internal/protocols/gt06n"
+	"github.com/Mustafa-Elfrmawy/rased-engine/internal/protocols/gt06n_tcp"
 	"io"
 	"log"
 	"net"
@@ -53,12 +53,12 @@ func (s *Server) Start(addr string) {
 	log.Printf("GT06N listener started on %s", addr)
 
 	for {
+		// log.Fatalf("GT06N listener started on %v", s.handler.Port)
 		conn, err := listener.Accept()
 		if err != nil {
 			log.Printf("TCP Accept error: %v", err)
 			continue
 		}
-
 		// One lightweight goroutine per accepted connection
 		go s.handleConnection(conn)
 	}
@@ -76,8 +76,7 @@ func (s *Server) handleConnection(conn net.Conn) {
 	defer conn.Close()
 	remoteAddr := conn.RemoteAddr()
 
-	log.Printf("New persistent TCP connection from %v", remoteAddr)
-
+	
 	// Enable OS-level TCP KeepAlive as a secondary safety net
 	if tcpConn, ok := conn.(*net.TCPConn); ok {
 		_ = tcpConn.SetKeepAlive(true)

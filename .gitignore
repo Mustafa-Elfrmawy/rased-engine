@@ -1,2 +1,3 @@
 # Build artifacts (air + local go build)
 /tmp/
+implementation_summary.md
